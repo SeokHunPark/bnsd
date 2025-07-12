@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>성가대 연습 일지</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>성가대 연습 일지</h1>
+        <div id="input-section">
+            
+            <div>
+                <label for="start-prayer">시작기도:</label><br>
+                <input type="text" id="start-prayer" name="start-prayer"><br>
+            </div>
+            <div>
+                <label for="end-prayer">마침기도:</label><br>
+                <input type="text" id="end-prayer" name="end-prayer"><br>
+            </div>
+            <div>
+                <label for="conductor">연습 진행:</label><br>
+                <input type="text" id="conductor" name="conductor" value="카롤리나 반주자님"><br>
+            </div>
+            <div>
+                <label for="believer-practice">신자 연습:</label><br>
+                <input type="text" id="believer-practice" name="believer-practice"><br>
+            </div>
+            <div>
+                <label for="pianist">반주:</label><br>
+                <input type="text" id="pianist" name="pianist"><br>
+            </div>
+            <div>
+                <label for="female-members">여성:</label><br>
+                <textarea id="female-members" name="female-members"></textarea><br>
+            </div>
+            <div>
+                <label for="male-members">남성:</label><br>
+                <textarea id="male-members" name="male-members"></textarea><br>
+            </div>
+            <div class="full-width">
+                <label for="practice-songs">연습곡 (한 줄에 한 곡씩 입력):</label><br>
+                <textarea id="practice-songs" name="practice-songs"></textarea><br>
+            </div>
+            <div class="full-width">
+                <label for="extra-songs">추가 연습곡 (한 줄에 한 곡씩 입력):</label><br>
+                <textarea id="extra-songs" name="extra-songs"></textarea><br>
+            </div>
+
+        </div>
+        <button id="generate-log">일지 생성</button>
+        <hr>
+        <h2>연습 일지 결과</h2>
+        <pre id="output"></pre>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
