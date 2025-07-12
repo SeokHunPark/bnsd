@@ -1,1 +1,1 @@
-Change input UI to a single column layout
+Add 'Practice Songs' title to the UI
