@@ -1,1 +1,1 @@
-Clear default value for conductor input field
+Separate song number and title inputs for Entrance and Offertory; clean up script.js
