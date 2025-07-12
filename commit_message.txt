@@ -1,1 +1,1 @@
-Fix button click issue
+Separate input fields for Mass songs
