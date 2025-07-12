@@ -1,1 +1,1 @@
-Separate song number and title inputs; clear conductor field
+Add input fields for Holy, Kyrie, Agnus Dei and update script logic
