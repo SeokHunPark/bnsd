@@ -38,17 +38,69 @@ label {
 
 input[type="text"],
 textarea {
-    width: 100%;
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
 }
 
+#input-section > div > input[type="text"],
+#input-section > div > textarea {
+    width: 100%;
+}
+
+.song-input-pair {
+    display: flex;
+    gap: 15px;
+}
+
+.song-input-pair input[type="text"] {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.song-labels {
+    display: grid;
+    grid-template-columns: 25px 60px 1fr; /* '1. ' 텍스트, 번호 입력 필드, 제목 입력 필드에 맞춰 열 너비 설정 */
+    margin-bottom: 5px;
+}
+
+.song-labels span:first-child {
+    grid-column: 2; /* '번호:'를 번호 입력 필드 위에 정렬 */
+    text-align: left;
+}
+
+.song-labels span:last-child {
+    grid-column: 3; /* '제목:'을 제목 입력 필드 위에 정렬 */
+    text-align: left;
+}
+
+.song-entry {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.song-entry span {
+    margin-right: 5px;
+}
+
+.song-entry input[type="text"]:first-of-type {
+    width: 60px;
+    margin-right: 5px; /* 간격 줄임 */
+}
+
+.song-entry input[type="text"]:last-of-type {
+    flex-grow: 2; /* 제목 입력창이 번호 입력창보다 2배 더 많은 공간을 차지하도록 */
+}
+
 textarea {
+    width: 100%;
     height: 100px;
     resize: vertical;
 }
+
 
 button {
     display: block;

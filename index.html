@@ -46,30 +46,72 @@
             <div class="full-width">
                 <h2 style="text-align: center;">🎵 연습곡 🎵</h2>
             </div>
-            <div class="full-width">
-                <label for="entrance-songs">입당 (한 줄에 한 곡씩 입력):</label><br>
-                <textarea id="entrance-songs" name="entrance-songs"></textarea><br>
+            <div class="full-width song-input-pair">
+                <div>
+                    <label>입당:</label><br>
+                    <div class="song-labels">
+                        <span>번호:</span>
+                        <span>제목:</span>
+                    </div>
+                    <div class="song-entry">
+                        <span>1.</span> <input type="text" id="entrance-song-numbers" name="entrance-song-numbers"> <input type="text" id="entrance-song-titles" name="entrance-song-titles">
+                    </div>
+                </div>
+            </div>
+            <div class="full-width song-input-pair">
+                <div>
+                    <label>봉헌:</label><br>
+                    <div class="song-labels">
+                        <span>번호:</span>
+                        <span>제목:</span>
+                    </div>
+                    <div class="song-entry">
+                        <span>1.</span> <input type="text" id="offertory-song-number-1" name="offertory-song-number-1"> <input type="text" id="offertory-song-title-1" name="offertory-song-title-1">
+                    </div>
+                    <div class="song-entry">
+                        <span>2.</span> <input type="text" id="offertory-song-number-2" name="offertory-song-number-2"> <input type="text" id="offertory-song-title-2" name="offertory-song-title-2">
+                    </div>
+                    <div class="song-entry">
+                        <span>3.</span> <input type="text" id="offertory-song-number-3" name="offertory-song-number-3"> <input type="text" id="offertory-song-title-3" name="offertory-song-title-3">
+                    </div>
+                </div>
+            </div>
+            <div class="full-width song-input-pair">
+                <div>
+                    <label>성체:</label><br>
+                    <div class="song-labels">
+                        <span>번호:</span>
+                        <span>제목:</span>
+                    </div>
+                    <div class="song-entry">
+                        <span>1.</span> <input type="text" id="communion-song-number-1" name="communion-song-number-1"> <input type="text" id="communion-song-title-1" name="communion-song-title-1">
+                    </div>
+                    <div class="song-entry">
+                        <span>2.</span> <input type="text" id="communion-song-number-2" name="communion-song-number-2"> <input type="text" id="communion-song-title-2" name="communion-song-title-2">
+                    </div>
+                    <div class="song-entry">
+                        <span>3.</span> <input type="text" id="communion-song-number-3" name="communion-song-number-3"> <input type="text" id="communion-song-title-3" name="communion-song-title-3">
+                    </div>
+                </div>
             </div>
             <div class="full-width">
-                <label for="offertory-song-numbers">봉헌 곡 번호 (한 줄에 하나씩):</label><br>
-                <textarea id="offertory-song-numbers" name="offertory-song-numbers"></textarea><br>
-                <label for="offertory-song-titles">봉헌 곡 제목 (한 줄에 하나씩):</label><br>
-                <textarea id="offertory-song-titles" name="offertory-song-titles"></textarea><br>
-            </div>
-            <div class="full-width">
-                <label for="communion-song-titles">성체 곡 제목 (한 줄에 하나씩):</label><br>
-                <textarea id="communion-song-titles" name="communion-song-titles"></textarea><br>
-                <label for="communion-special-song">성체 특송:</label><br>
+                <label for="communion-special-song">특송:</label><br>
                 <input type="text" id="communion-special-song" name="communion-special-song"><br>
             </div>
-            <div class="full-width">
-                <label for="dismissal-song-numbers">파견 곡 번호 (한 줄에 하나씩):</label><br>
-                <textarea id="dismissal-song-numbers" name="dismissal-song-numbers"></textarea><br>
-                <label for="dismissal-song-titles">파견 곡 제목 (한 줄에 하나씩):</label><br>
-                <textarea id="dismissal-song-titles" name="dismissal-song-titles"></textarea><br>
+            <div class="full-width song-input-pair">
+                <div>
+                    <label>파견:</label><br>
+                    <div class="song-labels">
+                        <span>번호:</span>
+                        <span>제목:</span>
+                    </div>
+                    <div class="song-entry">
+                        <span>1.</span> <input type="text" id="dismissal-song-numbers" name="dismissal-song-numbers"> <input type="text" id="dismissal-song-titles" name="dismissal-song-titles">
+                    </div>
+                </div>
             </div>
             <div class="full-width">
-                <label for="extra-songs">그 외 추가 할 내용 (한 줄에 한 곡씩 입력):</label><br>
+                <label for="extra-songs">그 외 추가 할 내용:</label><br>
                 <textarea id="extra-songs" name="extra-songs"></textarea><br>
             </div>
 
@@ -77,6 +119,7 @@
         <button id="generate-log">일지 생성</button>
         <hr>
         <h2>연습 일지 결과</h2>
+        <button id="copy-log">결과 복사</button>
         <pre id="output"></pre>
     </div>
     <script src="script.js"></script>
