@@ -1,1 +1,1 @@
-Revert Holy/Kyrie/Agnus Dei, change extra songs title, add special song for Communion, limit songs to 3 for Offertory/Communion
+Clear default value for conductor input field
