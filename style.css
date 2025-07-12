@@ -26,12 +26,6 @@ h1 {
     margin-bottom: 20px;
 }
 
-@media (min-width: 600px) {
-    #input-section {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
 .full-width {
     grid-column: 1 / -1;
 }

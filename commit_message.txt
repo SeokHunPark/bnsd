@@ -1,1 +1,1 @@
-Separate input fields for Mass songs
+Change input UI to a single column layout
